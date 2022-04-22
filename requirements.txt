@@ -1,0 +1,6 @@
+fire
+loguru
+pyyaml
+tqdm
+numpy
+pillow

@@ -1,0 +1,24 @@
+Model:
+    CharSet: [' ', b, x, n, c, d, m, a, '3', '5', e, '2', p, f, w, g, '6', y, '8',
+        '4', '7']
+    ImageChannel: 1
+    ImageHeight: 64
+    ImageWidth: -1
+    Word: false
+System:
+    Allow_Ext: [jpg, jpeg, png, bmp]
+    GPU: true
+    GPU_ID: 0
+    Path: ../input/javary/java若依
+    Project: test_project
+    Val: 0.07
+Train:
+    BATCH_SIZE: 1024
+    CNN: {NAME: ddddocr}
+    DROPOUT: 0.3
+    LR: 0.01
+    OPTIMIZER: SGD
+    SAVE_CHECKPOINTS_STEP: 900
+    TARGET: {Accuracy: 0.9, Cost: 0.05, Epoch: 20}
+    TEST_BATCH_SIZE: 1024
+    TEST_STEP: 1000
